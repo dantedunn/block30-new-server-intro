@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Server Intro Block30</title>
+  </head>
+  <body>
+    <h1>Dante's server render html</h1>
+    <script>
+      async function getColors() {
+        const response = await fetch("/api/colors");
+        const data = await response.json();
+        console.log(data);
+      }
+      getColors();
+    </script>
+  </body>
+</html>
