@@ -5,9 +5,10 @@ const app = express()
 const port = process.env.PORT || 8080
 
 const colors = [
-  { color: ['red', 'white', 'blue'] },
-  'green',
-  { shapes: ['circle', 'oval', 'square'] }
+  { color: ['red', 'white', 'blue', 'green'] },
+
+  { shapes: ['circle', 'oval', 'square'] },
+  { groceryList: ['eggs', 'blueberries', 'yogurt', 'honey', 'cinnamon'] }
 ]
 
 app.get('/colors', (req, res) => {

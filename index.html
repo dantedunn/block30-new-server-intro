@@ -9,7 +9,7 @@
     <h1>Dante's server render html</h1>
     <script>
       async function getColors() {
-        const response = await fetch("/api/colors");
+        const response = await fetch("/colors");
         const data = await response.json();
         console.log(data);
       }
